@@ -1003,15 +1003,6 @@ time{
   color: #0e94ec !important;
 }
 
-.social{
-  float: right;
-  padding: 20px;
-}
-
-.social a{
-  margin-left: 8px;
-}
-
 #paginator{
   text-align: center;
 }

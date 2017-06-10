@@ -48,6 +48,14 @@
 
 </head>
 
+{%- macro display_link(name, link, text) -%}
+  {%- if MANGLE_EMAILS and link.startswith('mailto:') -%}
+  <a data-email="{{ link|reverse }}"{% if not text %} data-title="{{ name }}"{% endif %} title="You need javascript enabled to view this email" class="email">{{ text }}{{ get_icon(link) }}</a>
+  {%- else -%}
+  <a href="{{ link }}"{% if not text %} title="{{ name }}"{% endif %} {{ 'class="active"' if  output_file == link }}>{{ text }}{{ get_icon(link) }}</a>
+  {%- endif -%}
+{%- endmacro -%}
+
 <body class="home blog">
   <div>
     <header class="site-header">
