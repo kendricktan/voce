@@ -168,10 +168,13 @@
         <div class="row">
                     <div class="copyright col-md-12">
                     {% for name, link in SOCIAL %}
-                    <a href="{{ link }}">{{ name }}</a> | 
+                        {% if forloop.last %}
+                            <a href="{{ link }}">{{ name }}</a>
+                        {% else %}
+                            <a href="{{ link }}">{{ name }}</a> | 
+                        {% endif %}
                     {% endfor %}
-                    <a href="{{ SITEURL }}">blog</a><br />
-                    &copy; 2016-2017 <a href="{{ SITEURL }}">{{ AUTHOR }}</a> </div>
+                    &copy; 2016-{{ COPYRIGHT_YEAR }} <a href="{{ SITEURL }}">{{ AUTHOR }}</a> </div>
         </div>
       </div><!-- .site-info -->
       <div class="scroll-to-top" style="display: none;"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
