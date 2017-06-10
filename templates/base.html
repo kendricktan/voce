@@ -168,11 +168,7 @@
         <div class="row">
                     <div class="copyright col-md-12">
                     {% for name, link in SOCIAL %}
-                        {% if forloop.last %}
-                            <a href="{{ link }}">{{ name }}</a>
-                        {% else %}
-                            <a href="{{ link }}">{{ name }}</a> | 
-                        {% endif %}
+                    <a href="{{ link }}">{{ name }}</a>{{ " | " if not loop.last }} 
                     {% endfor %}
                     &copy; 2016-{{ COPYRIGHT_YEAR }} <a href="{{ SITEURL }}">{{ AUTHOR }}</a> </div>
         </div>
