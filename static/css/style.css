@@ -300,10 +300,10 @@ hr.section-divider {
 
 .post-inner-content {
   /*border-bottom: 1px solid #dedede;*/
-  padding: 5px 0;
+  padding: 0px 0;
 }
 .archive .post-inner-content {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 .page .post-inner-content {
   border: 0;
