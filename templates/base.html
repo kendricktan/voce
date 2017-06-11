@@ -170,9 +170,11 @@
         <div class="row">
                     <div class="copyright col-md-12">
                     {% for name, link in SOCIAL %}
-                    <a href="{{ link }}">{{ name }}</a>{{ " | " if not loop.last }} 
-                    {% endfor %}<br/>
-                    &copy; 2016-{{ COPYRIGHT_YEAR }} <a href="{{ SITEURL }}">{{ AUTHOR }}</a> </div>
+                    <a href="{{ link }}">{{ name }}</a>{{ "&nbsp;&nbsp;|&nbsp;&nbsp;" if not loop.last }}
+                    {% endfor %}<br/><br/>
+                    &copy; {{ COPYRIGHT_YEAR }}&nbsp;&nbsp;<a href="{{ SITEURL }}">{{ AUTHOR }}</a><br/>
+                    {{ FOOTER_INFO }}
+                    </div>
         </div>
       </div><!-- .site-info -->
       <div class="scroll-to-top" style="display: none;"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
