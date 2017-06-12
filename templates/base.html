@@ -189,6 +189,11 @@
     }})
   </script>
 
+  {% if GOOGLE_ANALYTICS %}
+    {% include "partial/ga.html" %}
+  {% endif %}
+
+
   {% if MANGLE_EMAILS %}
   <script type="text/javascript">
     window.addEventListener('load', function(){
