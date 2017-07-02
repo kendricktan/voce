@@ -1,7 +1,7 @@
 Customized Voce theme for Pelican
 ======================
 
-This is a forked project from [https://github.com/limbenjamin/voce](limbenjaminlim/voce), customized to my personal liking.
+This is a forked project from https://github.com/limbenjamin/voce, customized to my personal liking.
 
 You may see the website live at: https://kndrck.co
 
